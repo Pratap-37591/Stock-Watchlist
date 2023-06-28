@@ -1,0 +1,4 @@
+.custom-input:focus{
+    box-shadow: none !important;
+    border: 1px solid grey !important;
+}
