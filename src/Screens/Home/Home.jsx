@@ -13,8 +13,10 @@ const Home = () => {
   const [query, setQuery] = useState("");
 
   const watchlist = useMemo(() => {
-    const respose = axios.get(`https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&outputsize=full&apikey=${AppKey}`);
-    setSearch()
+    const respose = axios.get(
+      `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&outputsize=full&apikey=${AppKey}`
+    );
+    setSearch();
   });
 
   const searchhandle = (e) => {
